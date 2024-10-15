@@ -15,6 +15,9 @@ from typing import List
 # If it's in a different file, you would use: from <module>
 # import wait_random
 async def wait_random(max_delay: int = 10) -> float:
+    """
+    Wait random function
+    """
     delay = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
     return delay
